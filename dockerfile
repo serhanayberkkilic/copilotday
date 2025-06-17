@@ -28,4 +28,4 @@ RUN uv sync --frozen
 EXPOSE 8000
 
 # Start the MCP server exactly as in your desktop config
-CMD ["uv", "run", "--with", "mcp[cli]", "mcp", "run", "main.py"]
+CMD ["uv", "run", "--with", "mcp[cli]", "mcp", "run", "main.py", "--host", "0.0.0.0", "--port", "8000"]
